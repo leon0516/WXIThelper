@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="8dp"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <RelativeLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView"
+                android:layout_toRightOf="@+id/imageView"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/outher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="haleo"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/postTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/outher"
+                    android:layout_marginLeft="8dp"
+                    android:text="2015:05:14 12:23:34"
+
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/reimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/linearLayout"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/linearLayout"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/comments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@+id/imageView2"
+                    android:text="25" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/comment" />
+
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+        <us.feras.mdv.MarkdownView
+            android:id="@+id/markdownView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff">
+
+        </us.feras.mdv.MarkdownView>
+    </LinearLayout>
+
+
+</LinearLayout>

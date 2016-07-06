@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.openiotlab.wxithelper.QueryMainActivity">
+
+    <GridView
+        android:id="@+id/gv_query_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="true"
+        android:columnWidth="90dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:layout_marginTop="8dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp"
+        android:choiceMode="singleChoice"
+        android:layout_below="@+id/imageView4" />
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/head"
+        android:layout_alignParentTop="true"
+        android:id="@+id/include4"
+        android:layout_alignEnd="@+id/gv_query_menu"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:id="@+id/imageView4"
+        android:layout_below="@+id/include4"
+        android:background="@drawable/xizhizp"
+        android:layout_alignParentEnd="true" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号:"
+            android:textColor="#ffe3130f"
+            android:textSize="22dp"
+            android:layout_marginStart="29dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:id="@+id/textView" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="余额:"
+            android:textSize="22dp"
+            android:textColor="#ffe3130f"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:id="@+id/textView5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="456"
+            android:textSize="22dp"
+            android:id="@+id/stu_card_no"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/textView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123"
+            android:textSize="22dp"
+            android:id="@+id/stu_card_yue"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_alignStart="@+id/stu_card_no" />
+    </RelativeLayout>
+
+</RelativeLayout>

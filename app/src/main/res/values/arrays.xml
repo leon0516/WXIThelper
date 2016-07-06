@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="menuList">
+        <item>首页</item>
+        <item>每日播报</item>
+        <item>我的资料</item>
+        <item>消息</item>
+        <item>分享</item>
+        <item>设置</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">锡职小棉袄</string>
+
+    <string name="action_settings">设置</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_pay_list">PayListActivity</string>
+    <string name="rememberPasswd">记住密码</string>
+    <string name="autoLogin">自动登录</string>
+    <string name="title_activity_recyler">RecylerActivity</string>
+    <string name="title_activity_paylist">paylistActivity</string>
+    <string name="title_activity_pay_history_list">PayHistoryListActivity</string>
+    <string name="title_activity_user_info">UserInfoActivity</string>
+    <string name="title_activity_query_main">QueryMainActivity</string>
+    <string name="title_activity_gong_gao">公告</string>
+    <string name="menu_login">登陆账号</string>
+    <string name="header_name">锡职小棉袄</string>
+    <string name="your_name_cannot_be_empty">请输入学号！</string>
+    <string name="your_name_is_ugly">请输入正确学号！</string>
+    <string name="your_password_cannot_be_empty">请输入密码！</string>
+    <string name="denglutishi">亲，要先登录才能使用哦~</string>
+    <string name="title_activity_cheng_ji">ChengJiActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_tu_shu_cha_xun">TuShuChaXunActivity</string>
+</resources>

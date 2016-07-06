@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GongGaoActivity">
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/head"
+        android:layout_alignParentTop="true"
+        android:id="@+id/include2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <zrc.widget.ZrcListView
+        android:id="@+id/zListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include2">
+    </zrc.widget.ZrcListView>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    tools:context="cn.openiotlab.wxithelper.TuShuChaXunActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_book_search"
+        android:layout_marginLeft="8dp"
+        android:singleLine="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/include7"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/IB_btn_search" />
+
+    <ImageButton
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/IB_btn_search"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/search"
+        android:layout_alignTop="@+id/ed_book_search"
+        android:layout_alignParentEnd="true" />
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/head"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/include7" />
+
+    <zrc.widget.ZrcListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tushu_listView"
+        android:layout_below="@+id/ed_book_search"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
